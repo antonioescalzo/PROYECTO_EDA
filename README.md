@@ -17,16 +17,34 @@ El cuaderno está estructurado en las siguientes secciones principales:
    - Breve descripción de las fuentes de datos y características clave.
 
 3. **Análisis Exploratorio**:
-   - Estadísticas descriptivas de las variables clave.
-   - Identificación de correlaciones y patrones.
+
+   ### Análisis Univariante
+   - Exploración de cada variable de forma individual para comprender su distribución y características.
+   - Métricas estadísticas clave como media, mediana, moda, varianza y desviación estándar.
+   - Uso de visualizaciones como:
+     - Histogramas para identificar la distribución de los retornos de activos individuales.
+     - Boxplots para detectar valores atípicos en las variables financieras.
+
+   ### Análisis Bivariante
+   - Análisis de relaciones entre pares de variables.
+   - Cálculo de coeficientes de correlación (e.g., Pearson, Spearman) para medir la relación entre los retornos de diferentes activos.
+   - Visualizaciones utilizadas:
+     - Diagramas de dispersión para observar relaciones lineales o no lineales.
+     - Heatmaps de correlación para identificar grupos de activos con comportamientos similares.
+
+   ### Insights esperados
+   - Identificación de activos con alta o baja correlación, fundamentales para construir carteras diversificadas.
+   - Comprensión de la dispersión de retornos y su contribución al riesgo total de la cartera.
 
 4. **Visualización de Datos**:
-   - Gráficos y visualizaciones que ilustran la diversificación y el riesgo.
-   - Ejemplos de visualizaciones: diagramas de dispersión, histogramas y heatmaps.
+   - Gráficos y visualizaciones avanzadas que ilustran la diversificación y el riesgo.
+   - Ejemplos:
+     - Gráficos de rendimiento acumulado.
+     - Mapas de calor y diagramas de matriz para correlaciones.
 
 5. **Modelado y Evaluación**:
-   - Aplicación de modelos para medir el impacto de la diversificación.
-   - Evaluación de estrategias para reducir el riesgo.
+   - Aplicación de métricas como el índice de Sharpe y la varianza de la cartera para medir el impacto de la diversificación.
+   - Evaluación de estrategias de construcción de carteras, como la frontera eficiente.
 
 6. **Conclusiones**:
    - Resumen de hallazgos principales.
@@ -34,28 +52,6 @@ El cuaderno está estructurado en las siguientes secciones principales:
 
 ---
 
-## Requisitos del Sistema
 
-Para ejecutar este cuaderno, asegúrate de tener instalado:
-
-- Python 3.12 o superior.
-- Jupyter Notebook o Jupyter Lab.
-- Librerías adicionales (ver sección siguiente).
-
----
-
-## Dependencias
-
-Este proyecto utiliza las siguientes librerías de Python:
-
-- `pandas`: para la manipulación de datos.
-- `numpy`: para cálculos numéricos.
-- `matplotlib` y `seaborn`: para visualización de datos.
-- `scipy`: para análisis estadísticos.
-
-Para instalar estas dependencias, puedes usar el siguiente comando:
-
-```bash
-pip install pandas numpy matplotlib seaborn scipy
 
 
